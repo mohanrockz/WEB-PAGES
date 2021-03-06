@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>ONLINE MUSIC WEBPAGE
+    </title>
+<link rel="stylesheet" type="text/css" href="1.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+nav{
+  float:right;
+  margin-top:15px;
+   
+}
+li{
+  margin-top:25px;
+  font-size:20px;
+  font-family:monospace;;
+  
+}
+a:hover{
+   color:red;
+   font-size:20px;
+   font-family:emoji;  
+   border-radius:10px 20px;
+}
+body{
+  background-repeat:no-repeat;
+  background:url(https://fsb.zobj.net/crop.php?r=1denGIfXa38CV5CooFa234yc9KBGfNbxJY-zfFVownKYw6y7fG5GmOt4JzNryu9_heS4T6fZiZa_wsIQYavpYZTaAHz6xeIJi_XAzGxrhNrUiDIX210ITpD4tzY4wRLW2OO6tf4arfqyCni6);
+  background-size: 1300px 900px;
+ }
+#img1{
+ float:left;
+ width:200px;
+ height:200px;
+ opacity:50%;
+ radius:50%;
+}
+#img1:hover{
+     width:210px;
+     height:210;     
+}
+#img2{
+    float:right;
+    width:80px;
+    height:60px;
+    border-radius:50%;
+    margin-right:100px;
+    margin-top:-60px;
+}
+#imgfront{
+   width:80px;
+  height:60px;
+  margin-left:430px;
+ marign-top:250px;
+border-radius:50%;
+}
+#imgback{
+    width:80px;
+    height:60px;
+    margin-left:420px;
+    margin-top:-180px;
+    border-radius:50%;
+}
+#para{
+  margin-top:250px;
+  margin-left:270px;
+ font-family:ui-rounded;
+ font-size:18px;
+}
+h1{
+   float:left;
+  font-size:90px;
+  opacity:60%;
+  color:white;
+  font-family:cursive;
+
+}
+col2{
+   float:right;
+   margin-left:30px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+
+  <img src="logo2.jpg" alt="logo" id="img1">
+</div>
+<div class="col-sm-6">
+              
+                  <div class="navbar navbar">
+                <ul class="nav navbar-nav">
+                 <li>	
+                <a class="active" class="nav-link" href="">HOME</a></li>
+                 <li>
+                <a class="nav-link" href="">ABOUT</a></li>
+                <li>
+                <a class="nav-link" href="">SPECIAL</a></li>
+                <li>
+                <a class="nav-link" href="">PRODUCT </a></li>
+                <li>
+               <a class="nav-link" href="">CONNECT</a></li>
+            </ul>
+        </div>
+</nav>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row2">
+<div class="col-md-6" id="col1">
+<h1> THE<br>REAL<br>SOUND</h1>
+</div>
+<div class="col-md-6" id="col2">
+<p id="para"> Click Here to Listen</p>
+ <img src="play.png" alt="play" id="img2">
+</div>
+</div>
+<audio id="mysong">
+ <source src="terafitoor.mp3" type="audio/mp3">
+</audio>
+<script>
+var mysong= document.getElementById("mysong");
+var icon = document.getElementById("img2");
+img2.onclick = function() {
+   if(mysong.paused) {
+      mysong.play();
+       icon.src="pause.png";
+
+}else{
+    mysong.pause();
+      icon.src="play.png";
+}
+
+}
+
+</script>
+<body>
+</html>
